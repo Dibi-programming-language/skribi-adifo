@@ -17,6 +17,13 @@
 				"command": "skribi-adifo.avor",
 				"title": "Avor :)"
 			}
+		],
+		"iconThemes": [
+			{
+				"id": "skribi_icon",
+				"label": "Skrbi File Icon",
+				"path": "./icons/skribi_icon.json"
+			}
 		]
 	},
 	"scripts": {

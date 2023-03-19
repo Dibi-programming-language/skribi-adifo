@@ -6,8 +6,7 @@
 	"repository": {
 		"expression": {
 			"patterns": [
-				{"include": "#string-double"},
-				{"include": "#string-single"},
+				{"include": "#string"},
 				{"include": "#comment"},
 				{"include": "#particle"},
 				{"include": "#function"},
@@ -15,16 +14,10 @@
 				{"include": "#numeric"}
 			]
 		},
-		"string-double": {
+		"string": {
 			"begin": "\"",
 			"end": "\"",
-			"name": "string.double.skribi",
-			"patterns": [ {"include": "#string-char-escape"} ]
-		},
-		"string-single": {
-			"begin": "'",
-			"end": "'",
-			"name": "string.simple.skribi",
+			"name": "string.skribi",
 			"patterns": [ {"include": "#string-char-escape"} ]
 		},
 		"string-char-escape": {

@@ -6,8 +6,7 @@ Skribi Adifo is an extension for **Visual Studio Code** helping you using **Skri
 
 Skribi Adifo highlight the skribi files (`.skrb`):
 
-\!\[feature X\]\(images/highlighting.png\)
-
+![feature X](https://raw.githubusercontent.com/Dibi-programming-langage/skribi-adifo/main/images/highlighting.png?token=GHSAT0AAAAAAB5WQZYLSUH4SUWIBPUKHLPCZAXEV5A)
 
 ## Release Notes
 
@@ -19,7 +18,7 @@ Skribi Adifo highlight the skribi files (`.skrb`):
 ## For more information
 
 * [Skribi Language GitHub](https://github.com/Dibi-programming-langage/Skribi-langage-source)
-* [*Skribi Adifo*'s GitHub](https://help.github.com/articles/markdown-basics/)
+* [*Skribi Adifo*'s GitHub](https://github.com/Dibi-programming-langage/skribi-adifo)
 * [Skribi Discord](https://discord.gg/YpTCrM4n4X)
 
 

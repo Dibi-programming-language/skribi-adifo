@@ -10,9 +10,14 @@ Skribi Adifo highlight the skribi files (`.skrb`):
 
 ## Release Notes
 
-### 1.0.0
+### 0.0.2
+
+* Add an icon and a license
+
+### 0.0.1
 
 * Highlighting skribi language
+
 
 
 ## For more information

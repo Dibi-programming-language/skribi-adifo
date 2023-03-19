@@ -4,6 +4,8 @@
 	"description": "Skribi Adifo will help you coding Skribi Language",
 	"version": "0.0.1",
 	"publisher": "skribi-adifo",
+	"license": "MIT",
+	"icon": "https://raw.githubusercontent.com/Dibi-programming-langage/skribi-adifo/main/icons/skribi_icon.png",
 	"engines": {
 		"vscode": "^1.76.0"
 	},
@@ -16,7 +18,9 @@
 		"languages": [
 			{
 				"id": "skribi",
-				"extensions": [".skrb"]
+				"extensions": [
+					".skrb"
+				]
 			}
 		],
 		"grammars": [

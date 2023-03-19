@@ -1,6 +1,6 @@
-# skribi-adifo README
+# Skribi Adifo
 
-This is the README for your extension "skribi-adifo". After writing up a brief description, we recommend including the following sections.
+Skribi Adifo is an extension for **Visual Studio Code** helping you using **Skribi Language**.
 
 ## Features
 

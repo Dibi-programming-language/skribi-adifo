@@ -12,6 +12,19 @@
 	"activationEvents": [],
 	"main": "./extension.js",
 	"contributes": {
+		"languages": [
+			{
+				"id": "skribi",
+				"extensions": [".skrb"]
+			}
+		],
+		"grammars": [
+			{
+				"language": "skribi",
+				"scopeName": "source.skribi",
+				"path": "./syntaxes/skribi.tmLanguage.json"
+			}
+		],
 		"commands": [
 			{
 				"command": "skribi-adifo.avor",

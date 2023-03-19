@@ -1,0 +1,55 @@
+{
+	"scopeName": "source.skribi",
+	"patterns": [
+		{"include": "#expression"}
+	],
+	"repository": {
+		"expression": {
+			"patterns": [
+				{"include": "#string-double"},
+				{"include": "#string-single"},
+				{"include": "#comment"},
+				{"include": "#particle"},
+				{"include": "#function"},
+				{"include": "#var"},
+				{"include": "#numeric"}
+			]
+		},
+		"string-double": {
+			"begin": "\"",
+			"end": "\"",
+			"name": "string.double.skribi",
+			"patterns": [ {"include": "#string-char-escape"} ]
+		},
+		"string-single": {
+			"begin": "'",
+			"end": "'",
+			"name": "string.simple.skribi",
+			"patterns": [ {"include": "#string-char-escape"} ]
+		},
+		"string-char-escape": {
+			"match": "\\\\.",
+			"name": "constant.character.escape.skribi"
+		},
+		"comment": {
+			"match": "#[^\\n\\r\\f\\v]*",
+			"name": "comment.skribi"
+		},
+		"particle": {
+			"match": "(ci|lok|nu|bi|pio|mio|galio|pu|fu|su|co|da|med|pur|zo) ",
+			"name": "keyword.particle.skribi"
+		},
+		"function": {
+			"match": "[a-zA-Z]\\w*(?=[\\(:])",
+			"name": "entity.name.function.skribi"
+		},
+		"var": {
+			"match": "[a-zA-Z]\\w*",
+			"name": "variable.skribi"
+		},
+		"numeric": {
+			"match": "-?\\d+(?:\\.\\d+)?",
+			"name": "constant.numeric.skribi"
+		}
+	}
+}

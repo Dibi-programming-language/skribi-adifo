@@ -8,8 +8,11 @@
 			"patterns": [
 				{"include": "#string"},
 				{"include": "#comment"},
+				{"include": "#block-unnamed"},
+				{"include": "#block-named"},
 				{"include": "#particle"},
 				{"include": "#function"},
+				{"include": "#keyword"},
 				{"include": "#var"},
 				{"include": "#numeric"}
 			]
@@ -28,13 +31,29 @@
 			"match": "#[^\\n\\r\\f\\v]*",
 			"name": "comment.skribi"
 		},
+		"block-unnamed": {
+			"match": "(kodi|spoki|biuli) ?(?={)",
+			"name": "keyword.control.block.skribi"
+		},
+		"block-named": {
+			"begin": "(kodi|spoki|biuli)\\s",
+			"end": ".(?=[{\\n])",
+			"beginCaptures": {
+			  "0": { "name": "keyword.control.block.skribi" }
+			},
+			"name": "string.block-name.skribi"
+		},
 		"particle": {
-			"match": "(ci|lok|nu|bi|pio|mio|galio|pu|fu|su|co|da|med|pur|zo) ",
-			"name": "keyword.particle.skribi"
+			"match": "(ci|lok|nu|bi|pio|mio|galio|pu|fu|ju|su|co|da|med|pur|zo) ",
+			"name": "keyword.control.particle.skribi"
 		},
 		"function": {
 			"match": "[a-zA-Z]\\w*(?=[\\(:])",
 			"name": "entity.name.function.skribi"
+		},
+		"keyword": {
+			"match": "(int|dar|skr|ioi|ioial|noial)\\s",
+			"name": "keyword.skribi"
 		},
 		"var": {
 			"match": "[a-zA-Z]\\w*",

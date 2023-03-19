@@ -3,6 +3,7 @@
 	"displayName": "Skribi Adifo",
 	"description": "Skribi Adifo will help you coding Skribi Language",
 	"version": "0.0.1",
+	"publisher": "skribi-adifo",
 	"engines": {
 		"vscode": "^1.76.0"
 	},

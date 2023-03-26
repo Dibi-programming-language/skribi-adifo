@@ -30,7 +30,7 @@
 			"name": "comment.skribi"
 		},
 		"particle": {
-			"match": "(ci|lok|nu|bi|pio|mio|galio|pu|fu|ju|su|co|da|med|pur|zo) ",
+			"match": "(ij|sula|ci|lok|nu|bi|pio|mio|galio|pu|fu|ju|su|co|da|med|pur|zo)[ \\n]",
 			"name": "keyword.control.particle.skribi"
 		},
 		"function": {

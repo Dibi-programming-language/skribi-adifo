@@ -19,7 +19,11 @@
             {
                 "id": "skribi",
                 "extensions": [".skrb"],
-                "configuration": "./skribi_language_configuration.json"
+                "configuration": "./skribi_language_configuration.json",
+                "icon": {
+                    "dark": "./icons/skribi_icon.png",
+                    "light": "./icons/skribi_icon.png"
+                }
             }
         ],
         "grammars": [

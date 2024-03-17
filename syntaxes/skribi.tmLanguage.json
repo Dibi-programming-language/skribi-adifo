@@ -1,53 +1,71 @@
 {
 	"scopeName": "source.skribi",
 	"patterns": [
-		{"include": "#expression"}
+		{
+			"include": "#expression"}
 	],
 	"repository": {
 		"expression": {
 			"patterns": [
 				{"include": "#string"},
 				{"include": "#comment"},
+				{"include": "#operator"},
 				{"include": "#particle"},
-				{"include": "#function"},
-				{"include": "#keyword"},
+				{"include": "#modifier"},
+				{"include": "#class"},
+				{"include": "#constant"},
 				{"include": "#var"},
-				{"include": "#numeric"}
+				{"include": "#function"},
+				{"include": "#parameter"}
 			]
 		},
 		"string": {
 			"begin": "\"",
 			"end": "\"",
 			"name": "string.skribi",
-			"patterns": [ {"include": "#string-char-escape"} ]
+			"patterns": [
+				{"include": "#string-char-escape"}
+			]
 		},
 		"string-char-escape": {
 			"match": "\\\\.",
 			"name": "constant.character.escape.skribi"
 		},
 		"comment": {
-			"match": "#[^\\n\\r\\f\\v]*",
+			"match": "//[^\\n\\r\\f\\v]*",
 			"name": "comment.skribi"
 		},
+		"operator": {
+			"match": "[\\-\\+\\*\\<\\>\\=/]",
+			"name": "keyword.operator.assignment.skribi"
+		},
 		"particle": {
-			"match": "(ij|sula|ci|lok|nu|bi|pio|mio|galio|pu|fu|ju|su|co|da|med|pur|zo)[ \\n]",
+			"match": "(ij|sula|ci|lok|nu|bi|ei)[ \\n]",
 			"name": "keyword.control.particle.skribi"
+		},
+		"modifier": {
+			"match": "^\\s*((ju|fu|pu)\\s*)+",
+			"name": "storage.modifier.skribi"
+		},
+		"class": {
+			"match": "(?<!\\w)(int|dar|skr|ioi|ums)(?!\\w)",
+			"name": "constant.language.skribi"
+		},
+		"constant": {
+			"match": "(-?\\d+(?:\\.\\d+)?|(?<!\\w)[in]o(?!\\w))",
+			"name": "constant.numeric.skribi"
+		},
+		"var": {
+			"match": "(?<=^\\s*(((ju|fu|pu)\\s*)*(int|dar|skr|ioi)\\s*)?)[a-zA-Z]\\w*",
+			"name": "entity.name.type.class.variable.skribi"
 		},
 		"function": {
 			"match": "[a-zA-Z]\\w*(?=[\\(:])",
 			"name": "entity.name.function.skribi"
 		},
-		"keyword": {
-			"match": "(int|dar|skr|ioi|ioial|noial|adatali)\\s",
-			"name": "keyword.skribi"
-		},
-		"var": {
-			"match": "[a-zA-Z]\\w*",
-			"name": "variable.skribi"
-		},
-		"numeric": {
-			"match": "-?\\d+(?:\\.\\d+)?",
-			"name": "constant.numeric.skribi"
+		"parameter": {
+			"match": "(?<=^\\s*ums [a-zA-Z]\\w*\\([^\\)]*(int|dar|skr|ioi)\\s*)[a-zA-Z]\\w*",
+			"name": "variable.parameter.skribi"
 		}
 	}
 }

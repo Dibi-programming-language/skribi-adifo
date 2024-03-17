@@ -38,7 +38,7 @@
 			"name": "entity.name.function.skribi"
 		},
 		"keyword": {
-			"match": "(int|dar|skr|ioi|ioial|noial)\\s",
+			"match": "(int|dar|skr|ioi|ioial|noial|adatali)\\s",
 			"name": "keyword.skribi"
 		},
 		"var": {

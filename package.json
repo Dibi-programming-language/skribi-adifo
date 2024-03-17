@@ -17,7 +17,7 @@
     "contributes": {
         "languages": [
             {
-                "id": "skribi",
+                "id": "Skribi",
                 "extensions": [".skrb"],
                 "configuration": "./skribi_language_configuration.json",
                 "icon": {
@@ -28,7 +28,7 @@
         ],
         "grammars": [
             {
-                "language": "skribi",
+                "language": "Skribi",
                 "scopeName": "source.skribi",
                 "path": "./syntaxes/skribi.tmLanguage.json"
             }

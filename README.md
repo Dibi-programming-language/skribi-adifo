@@ -1,6 +1,7 @@
 # Skribi Adifo
 
-> [!warning] This extension is not actively maintained 
+> [!warning]
+> This extension is not actively maintained 
 
 Skribi Adifo is an extension for **Visual Studio Code** helping you using **Skribi Language**.
 
